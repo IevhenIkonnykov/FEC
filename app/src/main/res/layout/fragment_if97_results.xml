@@ -1,0 +1,551 @@
+<ScrollView android:id="@+id/scrollView"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:weightSum="1">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/results"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <View style="@style/Divider"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stateTextView"
+                style="@style/MediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.35"
+                android:text="@string/state"/>
+
+            <TextView
+                android:id="@+id/stateResultTextView"
+                style="@style/SmallText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pressureTextView"
+                style="@style/Name"
+                android:text="@string/pressure"/>
+
+            <TextView
+                android:id="@+id/pressureSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/p"/>
+
+            <TextView
+                android:id="@+id/pressureResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/pressureUnitTextView"
+                style="@style/Unit"
+                android:text="@string/p_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/temperatureTextView"
+                style="@style/Name"
+                android:text="@string/temperature"/>
+
+            <TextView
+                android:id="@+id/temperatureSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/t"/>
+
+            <TextView
+                android:id="@+id/temperatureResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/temperatureUnitTextView"
+                style="@style/Unit"
+                android:text="@string/t_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/temperatureSatTextView"
+                style="@style/Name"
+                android:text="@string/temperature_saturation"/>
+
+            <TextView
+                android:id="@+id/temperatureSatSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/ts"/>
+
+            <TextView
+                android:id="@+id/temperatureSatResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/temperatureSatUnitTextView"
+                style="@style/Unit"
+                android:text="@string/t_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/enthalpyTextView"
+                style="@style/Name"
+                android:text="@string/enthalpy"/>
+
+            <TextView
+                android:id="@+id/enthalpySymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/h"/>
+
+            <TextView
+                android:id="@+id/enthalpyResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/enthalpyUnitTextView"
+                style="@style/Unit"
+                android:text="@string/en_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/densityTextView"
+                style="@style/Name"
+                android:text="@string/density"/>
+
+            <TextView
+                android:id="@+id/densitySymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/dn"/>
+
+            <TextView
+                android:id="@+id/densityResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/densityUnitTextView"
+                style="@style/Unit"
+                android:text="@string/dn_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/volumeTextView"
+                style="@style/Name"
+                android:text="@string/specific_volume"/>
+
+            <TextView
+                android:id="@+id/volumeSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/v"/>
+
+            <TextView
+                android:id="@+id/volumeResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/volumeUnitTextView"
+                style="@style/Unit"
+                android:text="@string/v_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/kinViscosityTextView"
+                style="@style/Name"
+                android:text="@string/kinematic_viscosity"/>
+
+            <TextView
+                android:id="@+id/kinViscositySymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/kv"/>
+
+            <TextView
+                android:id="@+id/kinViscosityResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/kinViscosityUnitTextView"
+                style="@style/Unit"
+                android:text="@string/kv_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dynViscosityTextView"
+                style="@style/Name"
+                android:text="@string/dynamic_viscosity"/>
+
+            <TextView
+                android:id="@+id/dynViscositySymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/dv"/>
+
+            <TextView
+                android:id="@+id/dynViscosityResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/dynViscosityUnitTextView"
+                style="@style/Unit"
+                android:text="@string/dv_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vapourTextView"
+                style="@style/Name"
+                android:text="@string/vapour_fraction"/>
+
+            <TextView
+                android:id="@+id/vapourSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/vf"/>
+
+            <TextView
+                android:id="@+id/vapourResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/vapourUnitTextView"
+                style="@style/Unit"
+                android:text="@string/vf_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cpTextView"
+                style="@style/Name"
+                android:text="@string/isobaric_heat_capacity"/>
+
+            <TextView
+                android:id="@+id/cpSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/cp"/>
+
+            <TextView
+                android:id="@+id/cpResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/cpUnitTextView"
+                style="@style/Unit"
+                android:text="@string/hc_s_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cvTextView"
+                style="@style/Name"
+                android:text="@string/isochoric_heat_capacity"/>
+
+            <TextView
+                android:id="@+id/cvSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/cv"/>
+
+            <TextView
+                android:id="@+id/cvResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/cvUnitTextView"
+                style="@style/Unit"
+                android:text="@string/hc_s_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/uTextView"
+                style="@style/Name"
+                android:text="@string/internal_energy"/>
+
+            <TextView
+                android:id="@+id/uSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/u"/>
+
+            <TextView
+                android:id="@+id/uResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/uUnitTextView"
+                style="@style/Unit"
+                android:text="@string/en_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sTextView"
+                style="@style/Name"
+                android:text="@string/entropy"/>
+
+            <TextView
+                android:id="@+id/sSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/s"/>
+
+            <TextView
+                android:id="@+id/sResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/sUnitTextView"
+                style="@style/Unit"
+                android:text="@string/hc_s_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tcTextView"
+                style="@style/Name"
+                android:text="@string/thermal_conductivity"/>
+
+            <TextView
+                android:id="@+id/tcSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/cond"/>
+
+            <TextView
+                android:id="@+id/tcResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/tcUnitTextView"
+                style="@style/Unit"
+                android:text="@string/tc_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dcTextView"
+                style="@style/Name"
+                android:text="@string/dielectric_constant"/>
+
+            <TextView
+                android:id="@+id/dcSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/dc"/>
+
+            <TextView
+                android:id="@+id/dcResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/dcUnitTextView"
+                style="@style/Unit"
+                android:text=""/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/expTextView"
+                style="@style/Name"
+                android:text="@string/isobaric_expansion_coefficient"/>
+
+            <TextView
+                android:id="@+id/expSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/exp"/>
+
+            <TextView
+                android:id="@+id/expResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/expUnitTextView"
+                style="@style/Unit"
+                android:text="@string/exp_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comprTextView"
+                style="@style/Name"
+                android:text="@string/isothermal_compressibility"/>
+
+            <TextView
+                android:id="@+id/comprSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/compr"/>
+
+            <TextView
+                android:id="@+id/comprResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/comprUnitTextView"
+                style="@style/Unit"
+                android:text="@string/compr_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/prTextView"
+                style="@style/Name"
+                android:text="@string/prandtl_number"/>
+
+            <TextView
+                android:id="@+id/prSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/pr"/>
+
+            <TextView
+                android:id="@+id/prResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/prUnitTextView"
+                style="@style/Unit"
+                android:text=""/>
+        </TableRow>
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/refrTextView"-->
+                <!--style="@style/Name"-->
+                <!--android:text="@string/refractive_index"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/refrSymbolTextView"-->
+                <!--style="@style/Symbol"-->
+                <!--android:text="@string/refr"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/refrResultTextView"-->
+                <!--style="@style/Value"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/refrUnitTextView"-->
+                <!--style="@style/Unit"-->
+                <!--android:text=""/>-->
+        <!--</TableRow>-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wTextView"
+                style="@style/Name"
+                android:text="@string/speed_of_sound"/>
+
+            <TextView
+                android:id="@+id/wSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/w"/>
+
+            <TextView
+                android:id="@+id/wResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/wUnitTextView"
+                style="@style/Unit"
+                android:text="@string/w_si"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stTextView"
+                style="@style/Name"
+                android:text="@string/surface_tension"/>
+
+            <TextView
+                android:id="@+id/stSymbolTextView"
+                style="@style/Symbol"
+                android:text="@string/st"/>
+
+            <TextView
+                android:id="@+id/stResultTextView"
+                style="@style/Value"/>
+
+            <TextView
+                android:id="@+id/stUnitTextView"
+                style="@style/Unit"
+                android:text="@string/st_si"/>
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

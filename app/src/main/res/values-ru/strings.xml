@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">FEC</string>
+    <string name="inputData">Исходные данные</string>
+    <string name="arguments">Аргументы</string>
+    <string name="arguments_prompt">f(?,?)</string>
+    <string name="saturation">Линия насыщения</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="shortListArgs">Short list</string>
+    <string name="longListArgs">Long list</string>
+    <string name="results">Результаты</string>
+    <string name="state">Состояние</string>
+    <string name="units">Ед. измерения</string>
+    <string name="unitsOfMeasurement">Единицы измерения</string>
+    <string name="choose">Выбрать</string>
+    <string name="n_a">недоступно</string>
+
+    <string name="pressure">Давление</string>
+    <string name="temperature">Температура</string>
+    <string name="temperature_saturation">Температура насыщения</string>
+    <string name="enthalpy">Энтальпия</string>
+    <string name="entropy">Энтропия</string>
+    <string name="density">Плотность</string>
+    <string name="specific_volume">Удельный объем</string>
+    <string name="kinematic_viscosity">Кинематическая вязкость</string>
+    <string name="dynamic_viscosity">Динамическая вязкость</string>
+    <string name="vapour_fraction">Степень сухости</string>
+    <string name="isobaric_heat_capacity">Изобарная теплоемкость</string>
+    <string name="isochoric_heat_capacity">Изохорная теплоемкость</string>
+    <string name="internal_energy">Внутренняя энергия</string>
+    <string name="thermal_conductivity">Теплопроводность</string>
+    <string name="dielectric_constant">Диэлектрическая константа</string>
+    <string name="isobaric_expansion_coefficient">Коэф. температурного расширения</string>
+    <string name="isothermal_compressibility">Изотермический коэф. сжимаемости</string>
+    <string name="prandtl_number">Критерий Прандтля</string>
+    <string name="speed_of_sound">Скорость звука</string>
+    <string name="surface_tension">Коэф. поверхностного натяжения</string>
+
+    <string name="saturated_liquid">Насыщенная вода</string>
+    <string name="saturated_vapour">Насыщенный пар</string>
+    <string name="liquid_vapour_mixture">Пароводяная смесь</string>
+    <string name="liquid">Недогретая вода</string>
+    <string name="vapour">Перегретый пар</string>
+
+    <string name="p">P=</string>
+    <string name="t">T=</string>
+    <string name="ts">Ts=</string>
+    <string name="h">H=</string>
+    <string name="dn">ρ=</string>
+    <string name="v">v=</string>
+    <string name="kv">ν=</string>
+    <string name="dv">µ=</string>
+    <string name="vf">x=</string>
+    <string name="cp">Cp=</string>
+    <string name="cv">Cv=</string>
+    <string name="u">U=</string>
+    <string name="s">S=</string>
+    <string name="cond">λ=</string>
+    <string name="dc">ε=</string>
+    <string name="exp">α=</string>
+    <string name="compr">β=</string>
+    <string name="pr">Pr=</string>
+    <string name="refr">n=</string>
+    <string name="w">w=</string>
+    <string name="st">σ=</string>
+
+    <string name="p_si">бар (a)</string>
+    <string name="p_im">psi(a)</string>
+
+    <string name="t_si">°C</string>
+    <string name="t_im">°F</string>
+
+    <string name="en_si">кДж/кг</string>
+    <string name="en_im">BTU/lb</string>
+
+    <string name="dn_si">кг/м³</string>
+    <string name="dn_im">lb/ft³</string>
+
+    <string name="v_si">м³/кг</string>
+    <string name="v_im">ft³/lb</string>
+
+    <string name="kv_si">м²/с</string>
+    <string name="kv_im">сСт</string>
+
+    <string name="dv_si">Па·с</string>
+    <string name="dv_im">сПз</string>
+
+    <string name="vf_si">%</string>
+    <string name="vf_im">%</string>
+
+    <string name="hc_s_si">кДж/(кг·K)</string>
+    <string name="hc_s_im">BTU/(lb·R)</string>
+
+    <string name="tc_si">кВт/(м·K)</string>
+    <string name="tc_im">BTU/(hr·ft·R)</string>
+
+    <string name="exp_si">1/K</string>
+    <string name="exp_im">1/R</string>
+
+    <string name="compr_si">1/МПа</string>
+    <string name="compr_im">in²/lb</string>
+
+    <string name="w_si">м/с</string>
+    <string name="w_im">ft/s</string>
+
+    <string name="st_si">Н/м</string>
+    <string name="st_im">lbf/ft</string>
+
+    <string-array name="arguments_array">
+        <item>f(P, T)</item>
+        <item>f(P, H)</item>
+        <item>f(P, S)</item>
+        <item>f(H, S)</item>
+        <item>f(T, S)</item>
+        <item>f(ρ, T)</item>
+        <item>f(P, x)</item>
+        <item>f(T, x)</item>
+    </string-array>
+
+    <string-array name="arguments_array_saturation">
+        <item>f(P, x)</item>
+        <item>f(T, x)</item>
+    </string-array>
+
+    <string-array name="pressure_array">
+        <item>бар(a)</item>
+        <item>psi(a)</item>
+    </string-array>
+
+    <string-array name="temperature_array">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+
+    <string-array name="enthalpy_array">
+        <item>кДж/кг</item>
+        <item>BTU/lb</item>
+    </string-array>
+
+    <string-array name="entropy_array">
+        <item>кДж/(кг·K)</item>
+        <item>BTU/(lb·R)</item>
+    </string-array>
+
+    <string-array name="density_array">
+        <item>кг/м³</item>
+        <item>lb/ft³</item>
+    </string-array>
+
+    <string-array name="vapour_array">
+        <item>%</item>
+        <item>%</item>
+    </string-array>
+
+    <string-array name="unitsOfMeasurement">
+        <item>СИ</item>
+        <item>Британские единицы</item>
+    </string-array>
+
+</resources>

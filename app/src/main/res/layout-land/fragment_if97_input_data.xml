@@ -1,0 +1,182 @@
+<ScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/inputData"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewSaturation"
+                style="@style/MediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/saturation"/>
+
+            <com.github.lguipeng.library.animcheckbox.AnimCheckBox
+                android:id="@+id/checkBoxSaturation"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:focusableInTouchMode="false"
+                android:padding="4dp"
+                app:circle_color="@color/colorAccent"
+                app:stroke_color="#000000"
+                app:stroke_width="2dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLabelArgs"
+                style="@style/MediumText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/arguments"/>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerFunction"
+                style="@style/Spinner"
+                android:focusableInTouchMode="false"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#000000"
+                app:ms_arrowSize="20dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_multiline="false"/>
+
+        </LinearLayout>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/textViewUnitFirst"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/pressure"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <me.zhanghai.android.materialedittext.MaterialEditText
+                android:id="@+id/editTextUnitFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="numberDecimal"/>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerUnitFirst"
+                style="@style/Spinner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:focusableInTouchMode="false"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#000000"
+                app:ms_arrowSize="20dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_multiline="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewUnitSecond"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/temperature"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <me.zhanghai.android.materialedittext.MaterialEditText
+                android:id="@+id/editTextUnitSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="numberDecimal"/>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerUnitSecond"
+                style="@style/Spinner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:focusableInTouchMode="false"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#000000"
+                app:ms_arrowSize="20dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_multiline="false"/>
+
+        </LinearLayout>
+
+        <View style="@style/Divider"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnCalculate"
+            style="@style/MediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:focusableInTouchMode="false"
+            fancy:fb_defaultColor="#5C6BC0"
+            fancy:fb_focusColor="#303F9F"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="@string/calculate"
+            fancy:fb_textColor="#FFFFFFFF"
+            fancy:fb_textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

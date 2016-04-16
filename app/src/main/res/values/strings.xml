@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">FEC</string>
+    <string name="inputData">Input data</string>
+    <string name="arguments">Arguments</string>
+    <string name="arguments_prompt">f(?,?)</string>
+    <string name="saturation">Saturation state</string>
+    <string name="calculate">Calculate</string>
+    <string name="shortListArgs">Short list</string>
+    <string name="longListArgs">Long list</string>
+    <string name="results">Results</string>
+    <string name="state">State</string>
+    <string name="units">Units</string>
+    <string name="unitsOfMeasurement">Units of measurement</string>
+    <string name="choose">Choose</string>
+    <string name="n_a">n/a</string>
+
+    <string name="pressure">Pressure</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_saturation">Temperature (saturation)</string>
+    <string name="enthalpy">Enthalpy</string>
+    <string name="entropy">Entropy</string>
+    <string name="density">Density</string>
+    <string name="specific_volume">Volume</string>
+    <string name="kinematic_viscosity">Kinematic viscosity</string>
+    <string name="dynamic_viscosity">Dynamic viscosity</string>
+    <string name="vapour_fraction">Vapour fraction</string>
+    <string name="isobaric_heat_capacity">Isobaric heat capacity</string>
+    <string name="isochoric_heat_capacity">Isochoric heat capacity</string>
+    <string name="internal_energy">Internal energy</string>
+    <string name="thermal_conductivity">Thermal conductivity</string>
+    <string name="dielectric_constant">Dielectric constant</string>
+    <string name="isobaric_expansion_coefficient">Isobaric exp. coefficient</string>
+    <string name="isothermal_compressibility">Isothermal compressibility</string>
+    <string name="prandtl_number">Prandtl number</string>
+    <string name="refractive_index">Refractive index</string>
+    <string name="speed_of_sound">Speed of sound</string>
+    <string name="surface_tension">Surface tension</string>
+
+    <string name="saturated_liquid">Saturated liquid</string>
+    <string name="saturated_vapour">Saturated vapour</string>
+    <string name="liquid_vapour_mixture">Liquid and vapour mixture</string>
+    <string name="liquid">Liquid</string>
+    <string name="vapour">Vapour</string>
+
+    <string name="p">P=</string>
+    <string name="t">T=</string>
+    <string name="ts">Ts=</string>
+    <string name="h">H=</string>
+    <string name="dn">ρ=</string>
+    <string name="v">v=</string>
+    <string name="kv">ν=</string>
+    <string name="dv">µ=</string>
+    <string name="vf">x=</string>
+    <string name="cp">Cp=</string>
+    <string name="cv">Cv=</string>
+    <string name="u">U=</string>
+    <string name="s">S=</string>
+    <string name="cond">λ=</string>
+    <string name="dc">ε=</string>
+    <string name="exp">α=</string>
+    <string name="compr">β=</string>
+    <string name="pr">Pr=</string>
+    <string name="refr">n=</string>
+    <string name="w">w=</string>
+    <string name="st">σ=</string>
+
+    <string name="p_si">bar(a)</string>
+    <string name="p_im">psi(a)</string>
+
+    <string name="t_si">°C</string>
+    <string name="t_im">°F</string>
+
+    <string name="en_si">kJ/kg</string>
+    <string name="en_im">BTU/lb</string>
+
+    <string name="dn_si">kg/m³</string>
+    <string name="dn_im">lb/ft³</string>
+
+    <string name="v_si">m³/kg</string>
+    <string name="v_im">ft³/lb</string>
+
+    <string name="kv_si">m²/s</string>
+    <string name="kv_im">cSt</string>
+
+    <string name="dv_si">Pa·s</string>
+    <string name="dv_im">cP</string>
+
+    <string name="vf_si">%</string>
+    <string name="vf_im">%</string>
+
+    <string name="hc_s_si">kJ/(kg·K)</string>
+    <string name="hc_s_im">BTU/(lb·R)</string>
+
+    <string name="tc_si">kW/(m·K)</string>
+    <string name="tc_im">BTU/(hr·ft·R)</string>
+
+    <string name="exp_si">1/K</string>
+    <string name="exp_im">1/R</string>
+
+    <string name="compr_si">1/MPa</string>
+    <string name="compr_im">in²/lb</string>
+
+    <string name="w_si">m/s</string>
+    <string name="w_im">ft/s</string>
+
+    <string name="st_si">N/m</string>
+    <string name="st_im">lbf/ft</string>
+
+
+    <string-array name="arguments_array">
+        <item>f(P, T)</item>
+        <item>f(P, H)</item>
+        <item>f(P, S)</item>
+        <item>f(H, S)</item>
+        <item>f(T, S)</item>
+        <item>f(ρ, T)</item>
+        <item>f(P, x)</item>
+        <item>f(T, x)</item>
+    </string-array>
+
+    <string-array name="arguments_array_saturation">
+        <item>f(P, x)</item>
+        <item>f(T, x)</item>
+    </string-array>
+
+    <string-array name="pressure_array">
+        <item>bar(a)</item>
+        <item>psi(a)</item>
+    </string-array>
+
+    <string-array name="temperature_array">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+
+    <string-array name="enthalpy_array">
+        <item>kJ/kg</item>
+        <item>BTU/lb</item>
+    </string-array>
+
+    <string-array name="entropy_array">
+        <item>kJ/(kg·K)</item>
+        <item>BTU/(lb·R)</item>
+    </string-array>
+
+    <string-array name="density_array">
+        <item>kg/m³</item>
+        <item>lb/ft³</item>
+    </string-array>
+
+    <string-array name="vapour_array">
+        <item>%</item>
+        <item>%</item>
+    </string-array>
+
+    <string-array name="unitsOfMeasurement">
+        <item>SI</item>
+        <item>Imperial</item>
+    </string-array>
+
+
+</resources>
